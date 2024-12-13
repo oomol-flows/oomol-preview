@@ -1,0 +1,44 @@
+nodes:
+  - task: preview::html_preview
+    title: "HTML Preview #1"
+    node_id: html_preview#1
+    inputs_from:
+      - handle: html
+  - task: preview::image_preview
+    title: "Image Preview #1"
+    node_id: image_preview#1
+    inputs_from:
+      - handle: file
+  - task: preview::images_preview
+    title: "Images Preview #1"
+    node_id: images_preview#1
+    inputs_from:
+      - handle: images
+  - task: preview::markdown_preview
+    title: "Markdown Preview #1"
+    node_id: markdown_preview#1
+    inputs_from:
+      - handle: text
+  - task: preview::video_preview
+    title: "Video Preview #1"
+    node_id: video_preview#1
+    inputs_from:
+      - handle: file_path
+  - task: self::html-preview
+    title: "HTML preview #1"
+    node_id: html-preview#1
+    inputs_from:
+      - handle: in
+  - task: self::image-preview
+    title: "Image preview #1"
+    node_id: image-preview#1
+    inputs_from:
+      - handle: in
+  - task: self::markdown-preview
+    title: "Markdown preview #1"
+    node_id: markdown-preview#1
+    inputs_from:
+      - handle: in
+  - task: self::video-preview
+    title: "Video Preview #1"
+    node_id: video-preview#1

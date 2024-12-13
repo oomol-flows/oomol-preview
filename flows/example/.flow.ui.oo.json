@@ -1,0 +1,81 @@
+{
+  "nodes": {
+    "html_preview#1": {
+      "rfNode": {
+        "position": {
+          "x": 713,
+          "y": -160.23385524749756
+        }
+      }
+    },
+    "image_preview#1": {
+      "rfNode": {
+        "position": {
+          "x": 713,
+          "y": 115
+        }
+      }
+    },
+    "images_preview#1": {
+      "rfNode": {
+        "position": {
+          "x": 713,
+          "y": 596.8522129526209
+        }
+      }
+    },
+    "markdown_preview#1": {
+      "rfNode": {
+        "position": {
+          "x": 713,
+          "y": 1058.071020856089
+        }
+      }
+    },
+    "video_preview#1": {
+      "contentWidth": 300,
+      "rfNode": {
+        "position": {
+          "x": 713,
+          "y": 1344.0882941821408
+        }
+      }
+    },
+    "html-preview#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 118.32196673686383,
+          "y": -160.23385524749756
+        }
+      }
+    },
+    "image-preview#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 118.32196673686383,
+          "y": 115
+        }
+      }
+    },
+    "markdown-preview#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 118.32196673686383,
+          "y": 1049.071020856089
+        }
+      }
+    },
+    "video-preview#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 118.32196673686383,
+          "y": 1344.0882941821408
+        }
+      }
+    }
+  }
+}
