@@ -1,5 +1,5 @@
 inputs_def:
-  - handle: video_path
+  - handle: audio_path
     description: Input
     json_schema:
       type: string
@@ -13,4 +13,4 @@ executor:
   options:
     spawn: false
     entry: main.py
-title: Video preview
+title: Audio preview
