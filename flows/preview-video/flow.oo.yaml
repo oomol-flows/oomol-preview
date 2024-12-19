@@ -1,0 +1,33 @@
+nodes:
+  - task: self::video-preview
+    title: "Video preview #1"
+    node_id: video-preview#1
+    inputs_from:
+      - handle: video_path
+        from_node:
+          - node_id: write-temp-file#1
+            output_handle: file_path
+  - task: oomol-file::read-url
+    title: "Read URL #1"
+    node_id: read-url#1
+    inputs_from:
+      - handle: url
+        value: http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
+      - handle: query
+        value:
+          {}
+      - handle: headers
+        value:
+          {}
+      - handle: timeout
+        value: 0
+      - handle: retry_times
+        value: 1
+  - task: oomol-file::write-temp-file
+    title: "Write temp file #1"
+    node_id: write-temp-file#1
+    inputs_from:
+      - handle: binary
+        from_node:
+          - node_id: read-url#1
+            output_handle: binary

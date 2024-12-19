@@ -1,0 +1,22 @@
+{
+  "nodes": {
+    "html-preview#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 206,
+          "y": 65
+        }
+      },
+      "sections": {
+        "inputs": {
+          "collapsed": {
+            "html": {
+              "[]": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

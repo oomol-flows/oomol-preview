@@ -1,0 +1,22 @@
+{
+  "nodes": {
+    "image-preview#1": {
+      "contentWidth": 589.3713626953971,
+      "rfNode": {
+        "position": {
+          "x": 644,
+          "y": 195
+        }
+      }
+    },
+    "read-url#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 154.0601425356149,
+          "y": 195
+        }
+      }
+    }
+  }
+}

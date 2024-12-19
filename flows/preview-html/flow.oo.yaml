@@ -1,0 +1,13 @@
+nodes:
+  - task: self::html-preview
+    title: "HTML preview #1"
+    node_id: html-preview#1
+    inputs_from:
+      - handle: html
+        value: |-
+          <html>
+          <body>
+          <h1>hello world</h1>
+          foobar
+          </body>
+          </html>
