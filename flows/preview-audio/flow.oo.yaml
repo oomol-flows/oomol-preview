@@ -1,0 +1,33 @@
+nodes:
+  - task: oomol-file::read-url
+    title: "Read URL #1"
+    node_id: read-url#1
+    inputs_from:
+      - handle: url
+        value: https://github.com/rafaelreis-hotmart/Audio-Sample-files/raw/master/sample.mp3
+      - handle: query
+        value:
+          {}
+      - handle: headers
+        value:
+          {}
+      - handle: timeout
+        value: 0
+      - handle: retry_times
+        value: 1
+  - task: oomol-file::write-temp-file
+    title: "Write temp file #1"
+    node_id: write-temp-file#1
+    inputs_from:
+      - handle: binary
+        from_node:
+          - node_id: read-url#1
+            output_handle: binary
+  - task: self::audio-preview
+    title: "Audio preview #1"
+    node_id: audio-preview#1
+    inputs_from:
+      - handle: audio_path
+        from_node:
+          - node_id: write-temp-file#1
+            output_handle: file_path

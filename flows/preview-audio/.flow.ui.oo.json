@@ -1,0 +1,31 @@
+{
+  "nodes": {
+    "read-url#1": {
+      "contentWidth": 420,
+      "rfNode": {
+        "position": {
+          "x": 151,
+          "y": 74
+        }
+      }
+    },
+    "write-temp-file#1": {
+      "contentWidth": 420,
+      "rfNode": {
+        "position": {
+          "x": 623,
+          "y": 74
+        }
+      }
+    },
+    "audio-preview#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 1100,
+          "y": 74
+        }
+      }
+    }
+  }
+}

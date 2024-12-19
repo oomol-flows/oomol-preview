@@ -1,0 +1,9 @@
+nodes:
+  - task: self::markdown-preview
+    title: "Markdown preview #1"
+    node_id: markdown-preview#1
+    inputs_from:
+      - handle: text
+        value: |-
+          # Hello world
+          > foobar

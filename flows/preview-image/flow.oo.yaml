@@ -1,0 +1,25 @@
+nodes:
+  - task: self::image-preview
+    title: "Image preview #1"
+    node_id: image-preview#1
+    inputs_from:
+      - handle: binary
+        from_node:
+          - node_id: read-url#1
+            output_handle: binary
+  - task: oomol-file::read-url
+    title: "Read URL #1"
+    node_id: read-url#1
+    inputs_from:
+      - handle: url
+        value: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/GOODSMILE_Racing_Komatti-Mirai_EV_TT_Zero.jpg/2880px-GOODSMILE_Racing_Komatti-Mirai_EV_TT_Zero.jpg
+      - handle: query
+        value:
+          {}
+      - handle: headers
+        value:
+          {}
+      - handle: timeout
+        value: 0
+      - handle: retry_times
+        value: 1
