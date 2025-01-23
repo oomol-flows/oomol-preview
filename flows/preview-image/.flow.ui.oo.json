@@ -1,20 +1,27 @@
 {
   "nodes": {
-    "image-preview#1": {
-      "contentWidth": 589.3713626953971,
+    "image-preview#2": {
       "rfNode": {
         "position": {
-          "x": 644,
-          "y": 195
+          "x": 0,
+          "y": 0
         }
       }
     },
-    "read-url#1": {
-      "contentWidth": 450,
+    "+value#1": {
+      "contentWidth": 415,
       "rfNode": {
         "position": {
-          "x": 154.0601425356149,
-          "y": 195
+          "x": 547.9409556261965,
+          "y": 275.8039981835206
+        }
+      }
+    },
+    "images-preview#1": {
+      "rfNode": {
+        "position": {
+          "x": 1322.4551916799153,
+          "y": -111.16290017019575
         }
       }
     }

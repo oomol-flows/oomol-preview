@@ -1,9 +1,8 @@
 inputs_def:
-  - handle: html
+  - handle: binary
     description: Input
     json_schema:
-      type: string
-      ui:widget: text
+      contentMediaType: oomol/bin
 outputs_def:
   []
 ui:
@@ -13,5 +12,5 @@ executor:
   options:
     spawn: false
     entry: main.py
-title: HTML preview
-icon: ":fa6-solid:globe:"
+title: Binary Image preview
+icon: ":fa6-solid:file-image:"

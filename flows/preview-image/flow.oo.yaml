@@ -1,25 +1,29 @@
 nodes:
   - task: self::image-preview
-    title: "Image preview #1"
-    node_id: image-preview#1
+    title: "Image preview #2"
+    node_id: image-preview#2
     inputs_from:
-      - handle: binary
+      - handle: image_path
+        value: "/oomol-driver/oomol-storage/截屏2025-01-21 14.27.00.png"
+  - values:
+      - handle: images
+        json_schema:
+          type: array
+          items:
+            type: string
+            ui:widget: file
+        value:
+          - /oomol-driver/oomol-storage/截屏2025-01-21 14.27.00.png
+          - /oomol-driver/oomol-storage/ssj.jpg
+    title: "Value #1"
+    node_id: +value#1
+  - task: self::images-preview
+    title: "Images preview #1"
+    node_id: images-preview#1
+    inputs_from:
+      - handle: images
+        value:
+          []
         from_node:
-          - node_id: read-url#1
-            output_handle: binary
-  - task: oomol-file::read-url
-    title: "Read URL #1"
-    node_id: read-url#1
-    inputs_from:
-      - handle: url
-        value: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/GOODSMILE_Racing_Komatti-Mirai_EV_TT_Zero.jpg/2880px-GOODSMILE_Racing_Komatti-Mirai_EV_TT_Zero.jpg
-      - handle: query
-        value:
-          {}
-      - handle: headers
-        value:
-          {}
-      - handle: timeout
-        value: 0
-      - handle: retry_times
-        value: 1
+          - node_id: +value#1
+            output_handle: images
