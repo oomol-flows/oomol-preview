@@ -14,3 +14,4 @@ executor:
     spawn: false
     entry: main.py
 title: Markdown preview
+icon: ":fa6-solid:note-sticky:"

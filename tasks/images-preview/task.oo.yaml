@@ -1,0 +1,23 @@
+inputs_def:
+  - handle: images
+    description: Input
+    json_schema:
+      type: array
+      items:
+        type: string
+outputs_def:
+  - handle: images
+    description: Output
+    json_schema:
+      type: array
+      items:
+        type: string
+ui:
+  default_width: 450
+executor:
+  name: python
+  options:
+    spawn: false
+    entry: __init__.py
+title: Images preview
+icon: ":fa6-solid:images:"

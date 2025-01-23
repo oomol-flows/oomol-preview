@@ -1,15 +1,16 @@
-inputs_def:
-  - handle: binary
-    description: Input
-    json_schema:
-      contentMediaType: oomol/bin
-outputs_def:
-  []
-ui:
-  default_width: 450
 executor:
   name: python
   options:
-    spawn: false
-    entry: main.py
+    entry: __init__.py
+inputs_def:
+  - handle: image_path
+    json_schema:
+      type: string
+      ui:widget: file
+outputs_def:
+  - handle: image_path
+    json_schema:
+      type: string
+      ui:widget: file
 title: Image preview
+icon: ":fa6-solid:image:"
