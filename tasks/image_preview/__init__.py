@@ -3,7 +3,7 @@ from oocana import Context, MediaPreviewPayload
 
 
 def main(params: dict, context: Context):
-    image_path = params.get("image_path")
+    image_path: str = params["image_path"]
     assert image_path is not None
     context.preview(
         MediaPreviewPayload(
