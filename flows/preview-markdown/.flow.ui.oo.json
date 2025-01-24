@@ -1,19 +1,46 @@
 {
   "nodes": {
-    "markdown-preview#1": {
-      "contentWidth": 450,
+    "+value#1": {
+      "contentWidth": 415,
       "rfNode": {
         "position": {
-          "x": 673.3297679288593,
-          "y": 49.78671250787962
+          "x": 176.1490146433062,
+          "y": 262.7204722036287
         }
       }
     },
-    "Markdown file preview#1": {
+    "markdown_text_preview#1": {
+      "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 88.73051496698156,
-          "y": -35.49220598679263
+          "x": 1084.884909107237,
+          "y": 308.93109010055514
+        }
+      }
+    },
+    "binary_save_as_file#1": {
+      "rfNode": {
+        "position": {
+          "x": 1114.884909107237,
+          "y": 0.07967831037434436
+        }
+      }
+    },
+    "encode-string#1": {
+      "contentWidth": 350,
+      "rfNode": {
+        "position": {
+          "x": 686.512149319791,
+          "y": 0.07967831037434436
+        }
+      }
+    },
+    "markdown_file_preview#3": {
+      "contentWidth": 543.289697411876,
+      "rfNode": {
+        "position": {
+          "x": 1635,
+          "y": 308.93109010055514
         }
       }
     }
