@@ -8,7 +8,7 @@ nodes:
           - node_id: url_to_path#1
             output_handle: address
   - task: oomol-file::url_to_path
-    title: "Url To Path  #1"
+    title: "URL to path  #1"
     node_id: url_to_path#1
     inputs_from:
       - handle: url

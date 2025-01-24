@@ -4,36 +4,16 @@
       "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 1115.8638163444957,
+          "x": 815.58443553797,
           "y": 77.04275483256446
         }
       }
     },
-    "url_to_binary#1": {
+    "url_to_path#1": {
       "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 97.22565289953866,
-          "y": 77.04275483256446
-        }
-      },
-      "sections": {
-        "inputs": {
-          "collapsed": {
-            "query": {
-              "[]": true
-            },
-            "headers": {
-              "[]": true
-            }
-          }
-        }
-      }
-    },
-    "binary_save_as_file#1": {
-      "rfNode": {
-        "position": {
-          "x": 632.1545071551749,
+          "x": 265.41160488312465,
           "y": 77.04275483256446
         }
       }

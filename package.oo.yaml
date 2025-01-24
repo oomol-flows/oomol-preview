@@ -6,7 +6,7 @@ scripts:
     pnpm install && pip install -r requirements.txt
 icon: ./icon.png
 dependencies:
-  oomol-file: 0.0.3
+  oomol-file: 0.0.4
   oomol-transform: 0.0.3
 name: oomol-preview
 displayName: Preview
@@ -14,3 +14,4 @@ description: A set of components to display files and data in various formats
 platform:
   os: ""
 releaseNotes: add new blocks
+repository: https://github.com/oomol-flows/oomol-preview
