@@ -1,4 +1,4 @@
-version: 0.0.1
+version: 0.0.2
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
@@ -12,4 +12,4 @@ displayName: Preview
 description: A set of components to display files and data in various formats
 platform:
   os: ""
-releaseNotes: this is the first version
+releaseNotes: add new blocks
