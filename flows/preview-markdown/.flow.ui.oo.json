@@ -4,17 +4,16 @@
       "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 166,
-          "y": 150
+          "x": 673.3297679288593,
+          "y": 49.78671250787962
         }
       }
     },
-    "+python#1": {
-      "contentWidth": 450,
+    "Markdown file preview#1": {
       "rfNode": {
         "position": {
-          "x": 585,
-          "y": 330
+          "x": 88.73051496698156,
+          "y": -35.49220598679263
         }
       }
     }

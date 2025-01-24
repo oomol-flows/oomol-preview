@@ -1,29 +1,40 @@
 {
   "nodes": {
-    "read-url#1": {
-      "contentWidth": 420,
-      "rfNode": {
-        "position": {
-          "x": 151,
-          "y": 74
-        }
-      }
-    },
-    "write-temp-file#1": {
-      "contentWidth": 420,
-      "rfNode": {
-        "position": {
-          "x": 623,
-          "y": 74
-        }
-      }
-    },
     "audio-preview#1": {
       "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 1100,
-          "y": 74
+          "x": 1115.8638163444957,
+          "y": 77.04275483256446
+        }
+      }
+    },
+    "url_to_binary#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 97.22565289953866,
+          "y": 77.04275483256446
+        }
+      },
+      "sections": {
+        "inputs": {
+          "collapsed": {
+            "query": {
+              "[]": true
+            },
+            "headers": {
+              "[]": true
+            }
+          }
+        }
+      }
+    },
+    "binary_save_as_file#1": {
+      "rfNode": {
+        "position": {
+          "x": 632.1545071551749,
+          "y": 77.04275483256446
         }
       }
     }
