@@ -8,6 +8,15 @@
           "y": 150
         }
       }
+    },
+    "+python#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 585,
+          "y": 330
+        }
+      }
     }
   }
 }

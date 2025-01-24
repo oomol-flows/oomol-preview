@@ -1,5 +1,5 @@
 nodes:
-  - task: self::html-preview
+  - task: self::html_preview
     title: "HTML preview #1"
     node_id: html-preview#1
     inputs_from:

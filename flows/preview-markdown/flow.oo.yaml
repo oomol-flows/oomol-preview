@@ -1,5 +1,5 @@
 nodes:
-  - task: self::markdown-preview
+  - task: self::markdown_text_preview
     title: "Markdown preview #1"
     node_id: markdown-preview#1
     inputs_from:
@@ -7,3 +7,12 @@ nodes:
         value: |-
           # Hello world
           > foobar
+        from_node:
+          - node_id: Markdown file preview#1
+            output_handle: text
+  - task: self::markdown_file_preview
+    title: "markdown_file_preview #1"
+    node_id: Markdown file preview#1
+    inputs_from:
+      - handle: file_path
+        value: /oomol-driver/oomol-storage/README.md

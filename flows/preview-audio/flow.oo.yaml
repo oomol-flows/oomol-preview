@@ -23,7 +23,7 @@ nodes:
         from_node:
           - node_id: read-url#1
             output_handle: binary
-  - task: self::audio-preview
+  - task: self::audio_preview
     title: "Audio preview #1"
     node_id: audio-preview#1
     inputs_from:
