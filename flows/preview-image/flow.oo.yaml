@@ -1,5 +1,5 @@
 nodes:
-  - task: self::image-preview
+  - task: self::image_preview
     title: "Image preview #2"
     node_id: image-preview#2
     inputs_from:
@@ -17,7 +17,7 @@ nodes:
           - /oomol-driver/oomol-storage/ssj.jpg
     title: "Value #1"
     node_id: +value#1
-  - task: self::images-preview
+  - task: self::images_preview
     title: "Images preview #1"
     node_id: images-preview#1
     inputs_from:

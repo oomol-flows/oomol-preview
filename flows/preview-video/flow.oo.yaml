@@ -1,5 +1,5 @@
 nodes:
-  - task: self::video-preview
+  - task: self::video_preview
     title: "Video preview #1"
     node_id: video-preview#1
     inputs_from:
