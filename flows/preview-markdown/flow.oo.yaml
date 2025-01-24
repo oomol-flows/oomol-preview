@@ -1,18 +1,50 @@
 nodes:
+  - values:
+      - handle: markdown
+        json_schema:
+          type: string
+          ui:widget: text
+        value: |-
+          # Title
+          hello world!
+          > foobar
+    title: "Value #1"
+    node_id: +value#1
   - task: self::markdown_text_preview
     title: "Markdown preview #1"
-    node_id: markdown-preview#1
+    node_id: markdown_text_preview#1
     inputs_from:
       - handle: text
-        value: |-
-          # Hello world
-          > foobar
         from_node:
-          - node_id: Markdown file preview#1
-            output_handle: text
+          - node_id: +value#1
+            output_handle: markdown
+  - task: oomol-file::binary_save_as_file
+    title: "Binary save as file #1"
+    node_id: binary_save_as_file#1
+    inputs_from:
+      - handle: binary
+        from_node:
+          - node_id: encode-string#1
+            output_handle: binary
+      - handle: suffix
+        value:
+      - handle: file_path
+        value:
+  - task: oomol-transform::encode-string
+    title: "Encode string #1"
+    node_id: encode-string#1
+    inputs_from:
+      - handle: string
+        from_node:
+          - node_id: +value#1
+            output_handle: markdown
+      - handle: encoding
+        value: utf_8
   - task: self::markdown_file_preview
-    title: "markdown_file_preview #1"
-    node_id: Markdown file preview#1
+    title: "Markdown preview (with file) #3"
+    node_id: markdown_file_preview#3
     inputs_from:
       - handle: file_path
-        value: /oomol-driver/oomol-storage/README.md
+        from_node:
+          - node_id: binary_save_as_file#1
+            output_handle: file_path

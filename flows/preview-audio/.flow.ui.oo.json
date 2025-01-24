@@ -1,29 +1,20 @@
 {
   "nodes": {
-    "read-url#1": {
-      "contentWidth": 420,
-      "rfNode": {
-        "position": {
-          "x": 151,
-          "y": 74
-        }
-      }
-    },
-    "write-temp-file#1": {
-      "contentWidth": 420,
-      "rfNode": {
-        "position": {
-          "x": 623,
-          "y": 74
-        }
-      }
-    },
     "audio-preview#1": {
       "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 1100,
-          "y": 74
+          "x": 815.58443553797,
+          "y": 77.04275483256446
+        }
+      }
+    },
+    "url_to_path#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 265.41160488312465,
+          "y": 77.04275483256446
         }
       }
     }
