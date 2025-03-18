@@ -4,17 +4,65 @@
       "contentWidth": 617.798791920691,
       "rfNode": {
         "position": {
-          "x": 681.967154183449,
+          "x": 679.4438845328993,
+          "y": 336.83070882873494
+        }
+      }
+    },
+    "url_to_file#1": {
+      "contentWidth": 450,
+      "rfNode": {
+        "position": {
+          "x": 156.66985218750267,
+          "y": 32.77671593749909
+        }
+      },
+      "sections": {
+        "inputs": {
+          "collapsed": {
+            "query": {
+              "[]": true
+            },
+            "headers": {
+              "[]": true
+            }
+          }
+        }
+      }
+    },
+    "file_to_binary#1": {
+      "contentWidth": 350,
+      "rfNode": {
+        "position": {
+          "x": 679.4438845328993,
           "y": 32.77671593749909
         }
       }
     },
-    "url_to_path#1": {
-      "contentWidth": 450,
+    "binary_image_preview#1": {
+      "contentWidth": 758.9272967422044,
       "rfNode": {
         "position": {
-          "x": 148.21134484879326,
-          "y": 32.77671593749909
+          "x": 1357.0062636428645,
+          "y": 336.83070882873494
+        }
+      }
+    },
+    "+typescript#1": {
+      "contentWidth": 576.4896015593656,
+      "rfNode": {
+        "position": {
+          "x": 1089.1915208183855,
+          "y": -225.00380937151795
+        }
+      }
+    },
+    "images_preview#1": {
+      "contentWidth": 611.1032038325033,
+      "rfNode": {
+        "position": {
+          "x": 2171.611244305952,
+          "y": 336.83070882873494
         }
       }
     }

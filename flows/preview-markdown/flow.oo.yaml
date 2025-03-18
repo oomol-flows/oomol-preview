@@ -41,7 +41,7 @@ nodes:
       - handle: encoding
         value: utf_8
   - task: self::markdown_file_preview
-    title: "Markdown preview (with file) #3"
+    title: "Markdown preview (with file) #1"
     node_id: markdown_file_preview#3
     inputs_from:
       - handle: file_path

@@ -12,9 +12,9 @@ outputs_def:
 ui:
   default_width: 450
 executor:
-  name: python
+  name: nodejs
   options:
+    entry: index.ts
     spawn: false
-    entry: __init__.py
 title: Markdown preview (with file)
 icon: ":fa6-solid:file-lines:"
