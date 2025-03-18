@@ -3,11 +3,13 @@ scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
   bootstrap: |
-    pnpm install && pip install -r requirements.txt
+    set -e
+    pnpm install --frozen-lockfile
 icon: ./icon.png
 dependencies:
   oomol-file: 0.0.9
   oomol-transform: 0.0.3
+  oomol-preview: 0.0.2
 name: oomol-preview
 displayName: Preview
 description: A set of components to display files and data in various formats

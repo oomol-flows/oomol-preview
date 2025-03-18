@@ -5,6 +5,7 @@ inputs_def:
       type: array
       items:
         type: string
+        ui:widget: file
 outputs_def:
   - handle: images
     description: Output
@@ -12,12 +13,13 @@ outputs_def:
       type: array
       items:
         type: string
+        ui:widget: file
 ui:
   default_width: 450
 executor:
-  name: python
+  name: nodejs
   options:
+    entry: index.ts
     spawn: false
-    entry: __init__.py
 title: Images preview
 icon: ":fa6-solid:images:"

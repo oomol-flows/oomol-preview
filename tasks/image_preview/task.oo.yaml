@@ -1,7 +1,8 @@
 executor:
-  name: python
+  name: nodejs
   options:
-    entry: __init__.py
+    entry: index.ts
+    spawn: false
 inputs_def:
   - handle: image_path
     json_schema:
