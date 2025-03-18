@@ -5,11 +5,21 @@ nodes:
     inputs_from:
       - handle: image_path
         from_node:
-          - node_id: url_to_path#1
-            output_handle: address
-  - task: oomol-file::url_to_path
-    title: "URL to path  #1"
-    node_id: url_to_path#1
+          - node_id: url_to_file#1
+            output_handle: file_path
+  - task: oomol-file::url_to_file
+    title: "URL to file  #1"
+    node_id: url_to_file#1
     inputs_from:
       - handle: url
         value: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/GOODSMILE_Racing_Komatti-Mirai_EV_TT_Zero.jpg/2880px-GOODSMILE_Racing_Komatti-Mirai_EV_TT_Zero.jpg
+      - handle: query
+        value:
+          {}
+      - handle: headers
+        value:
+          {}
+      - handle: timeout
+        value: 0
+      - handle: retry_times
+        value: 1

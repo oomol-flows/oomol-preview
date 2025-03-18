@@ -9,12 +9,24 @@
         }
       }
     },
-    "url_to_path#1": {
+    "url_to_file#1": {
       "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 148.21134484879326,
+          "x": 156.66985218750267,
           "y": 32.77671593749909
+        }
+      },
+      "sections": {
+        "inputs": {
+          "collapsed": {
+            "query": {
+              "[]": true
+            },
+            "headers": {
+              "[]": true
+            }
+          }
         }
       }
     }

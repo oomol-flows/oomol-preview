@@ -4,17 +4,29 @@
       "contentWidth": 615.716064453125,
       "rfNode": {
         "position": {
-          "x": 1048.191461284673,
+          "x": 1187.565191391143,
           "y": 275.521023109419
         }
       }
     },
-    "url_to_path#1": {
-      "contentWidth": 378.0401454030365,
+    "url_to_file#1": {
+      "contentWidth": 450,
       "rfNode": {
         "position": {
-          "x": 587.3870682361998,
+          "x": 633.7808055372644,
           "y": 275.521023109419
+        }
+      },
+      "sections": {
+        "inputs": {
+          "collapsed": {
+            "query": {
+              "[]": true
+            },
+            "headers": {
+              "[]": true
+            }
+          }
         }
       }
     }
