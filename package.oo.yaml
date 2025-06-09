@@ -1,4 +1,4 @@
-version: 0.0.3
+version: 0.0.4
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
@@ -14,5 +14,5 @@ displayName: Preview
 description: A set of components to display files and data in various formats
 platform:
   os: ""
-releaseNotes: replace python codes with typescript & upgrade dependencies.
+releaseNotes: fix install wrong dependencies & upgrade dependencies.
 repository: https://github.com/oomol-flows/oomol-preview
