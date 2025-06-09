@@ -7,9 +7,8 @@ scripts:
     pnpm install --frozen-lockfile
 icon: ./icon.png
 dependencies:
-  oomol-file: 0.0.9
-  oomol-transform: 0.0.3
-  oomol-preview: 0.0.2
+  oomol-file: 0.0.10
+  oomol-transform: 0.0.4
 name: oomol-preview
 displayName: Preview
 description: A set of components to display files and data in various formats
