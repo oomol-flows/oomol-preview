@@ -12,7 +12,5 @@ dependencies:
 name: oomol-preview
 displayName: Preview
 description: A set of components to display files and data in various formats
-platform:
-  os: ""
 releaseNotes: fix install wrong dependencies & upgrade dependencies.
 repository: https://github.com/oomol-flows/oomol-preview
