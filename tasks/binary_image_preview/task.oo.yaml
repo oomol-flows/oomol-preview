@@ -13,4 +13,4 @@ executor:
     entry: index.ts
     spawn: false
 title: Binary Image preview
-icon: ":fa6-solid:file-image:"
+icon: ":carbon:image:"

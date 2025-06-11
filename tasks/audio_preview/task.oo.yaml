@@ -14,4 +14,4 @@ executor:
     entry: index.ts
     spawn: false
 title: Audio preview
-icon: ":fa6-solid:music:"
+icon: ":carbon:document-audio:"

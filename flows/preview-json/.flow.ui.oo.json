@@ -1,0 +1,41 @@
+{
+  "nodes": {
+    "+value#2": {
+      "contentWidth": 415,
+      "rfNode": {
+        "position": {
+          "x": -840.4501940661953,
+          "y": 576.7827210938866
+        }
+      }
+    },
+    "json_file_preview#1": {
+      "contentWidth": 389.38048169493254,
+      "rfNode": {
+        "position": {
+          "x": -276.8772325917458,
+          "y": 490.0479176070214
+        }
+      },
+      "sections": {
+        "preview": {
+          "previewHeight": 289.2287006901903
+        }
+      }
+    },
+    "json_object_preview#1": {
+      "contentWidth": 379.02615906526114,
+      "rfNode": {
+        "position": {
+          "x": 184.46726548514857,
+          "y": 562.5693499305659
+        }
+      },
+      "sections": {
+        "preview": {
+          "previewHeight": 330.5847049210915
+        }
+      }
+    }
+  }
+}

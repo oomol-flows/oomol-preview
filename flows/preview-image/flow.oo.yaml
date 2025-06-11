@@ -68,11 +68,3 @@ nodes:
         from_node:
           - node_id: url_to_file#1
             output_handle: file_path
-  - task: oomol-preview::images_preview
-    title: "Images preview #1"
-    node_id: images_preview#1
-    inputs_from:
-      - handle: images
-        from_node:
-          - node_id: +typescript#1
-            output_handle: files

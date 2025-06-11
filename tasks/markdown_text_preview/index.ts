@@ -9,12 +9,11 @@ type Outputs = {};
 export default async function (
   params: Inputs,
   context: Context<Inputs, Outputs>
-): Promise<Outputs> {
+): Promise<Partial<Outputs> | undefined | void> {
   if (params.text) {
     await context.preview({
       type: "markdown",
       data: params.text,
     });
   }
-  return {};
 }

@@ -6,13 +6,12 @@ type Inputs = {
 
 type Outputs = {};
 
-export default async function (
-  params: Inputs,
-  context: Context<Inputs, Outputs>
-): Promise<Outputs> {
+export default async function(
+    params: Inputs,
+    context: Context<Inputs, Outputs>
+): Promise<Partial<Outputs> | undefined | void> {
   context.preview({
     type: "audio",
     data: params.audio_path,
   });
-  return {};
 };

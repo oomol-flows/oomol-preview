@@ -10,7 +10,7 @@ type Outputs = {};
 export default async function (
   params: Inputs,
   context: Context<Inputs, Outputs>
-): Promise<Outputs> {
+): Promise<Partial<Outputs> | undefined | void> {
   const { binary } = params;
   const tempFilePath = path.join(context.sessionDir, `temp_${Date.now()}`);
 
@@ -20,5 +20,4 @@ export default async function (
     type: "image",
     data: tempFilePath,
   });
-  return {};
 };

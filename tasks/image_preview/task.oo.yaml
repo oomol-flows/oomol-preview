@@ -14,4 +14,4 @@ outputs_def:
       type: string
       ui:widget: file
 title: Image preview
-icon: ":fa6-solid:image:"
+icon: ":carbon:image-search:"

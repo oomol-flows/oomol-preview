@@ -1,0 +1,16 @@
+ui:
+  default_width: 450
+inputs_def:
+  - handle: jsonObject
+    description: Input
+    json_schema:
+      {}
+outputs_def:
+  []
+executor:
+  name: nodejs
+  options:
+    entry: main.ts
+    spawn: false
+title: Json object preview
+icon: ":carbon:json:"

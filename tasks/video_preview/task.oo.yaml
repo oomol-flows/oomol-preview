@@ -14,4 +14,4 @@ executor:
     entry: index.ts
     spawn: false
 title: Video preview
-icon: ":fa6-solid:video:"
+icon: ":carbon:video-player:"
