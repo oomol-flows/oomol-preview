@@ -16,5 +16,5 @@ executor:
   options:
     entry: index.ts
     spawn: false
-title: Markdown preview (with file)
-icon: ":fa6-solid:file-lines:"
+title: Markdown file preview
+icon: ":carbon:document-attachment:"

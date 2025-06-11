@@ -1,17 +1,16 @@
+ui:
+  default_width: 450
 inputs_def:
-  - handle: text
+  - handle: jsonString
     description: Input
     json_schema:
       type: string
-      ui:widget: text
 outputs_def:
   []
-ui:
-  default_width: 450
 executor:
   name: nodejs
   options:
-    entry: index.ts
+    entry: main.ts
     spawn: false
-title: Markdown preview
-icon: ":carbon:document:"
+icon: ":carbon:json:"
+title: Json string preview
