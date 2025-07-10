@@ -4,11 +4,15 @@ inputs_def:
     json_schema:
       type: string
       ui:widget: file
+      ui:options:
+        filters:
+          - name: Markdown
+            extensions:
+              - md
+              - markdown
+              - mdown
 outputs_def:
-  - handle: text
-    description: Output
-    json_schema:
-      type: string
+  []
 ui:
   default_width: 450
 executor:

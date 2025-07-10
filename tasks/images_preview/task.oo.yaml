@@ -6,14 +6,41 @@ inputs_def:
       items:
         type: string
         ui:widget: file
+        ui:options:
+          filters:
+            - name: PNG
+              extensions:
+                - png
+                - apng
+            - name: JPEG
+              extensions:
+                - jpg
+                - jpeg
+                - jfif
+                - pjpeg
+                - pjp
+            - name: WebP
+              extensions:
+                - webp
+            - name: GIF
+              extensions:
+                - gif
+            - name: AVIF
+              extensions:
+                - avif
+            - name: BMP
+              extensions:
+                - bmp
+            - name: ICO
+              extensions:
+                - ico
+                - cur
+            - name: TIFF
+              extensions:
+                - tif
+                - tiff
 outputs_def:
-  - handle: images
-    description: Output
-    json_schema:
-      type: array
-      items:
-        type: string
-        ui:widget: file
+  []
 ui:
   default_width: 450
 executor:

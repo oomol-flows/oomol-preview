@@ -23,3 +23,5 @@ nodes:
         value: 0
       - handle: retry_times
         value: 1
+      - handle: reset_filename
+        value: true

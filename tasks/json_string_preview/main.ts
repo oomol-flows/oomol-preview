@@ -20,7 +20,7 @@ export default async function (
             type: "json",
             data: jsonObject
         })
-    } catch (error: any) {
+    } catch (error) {
         context.preview({
             type: "text",
             data: `Error parsing JSON: ${error.message}`

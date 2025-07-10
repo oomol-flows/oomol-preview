@@ -12,5 +12,5 @@ executor:
   options:
     entry: main.ts
     spawn: false
-title: Json object preview
+title: JSON object preview
 icon: ":carbon:json:"

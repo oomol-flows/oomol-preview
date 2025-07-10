@@ -13,4 +13,4 @@ executor:
     entry: main.ts
     spawn: false
 icon: ":carbon:json:"
-title: Json string preview
+title: JSON string preview

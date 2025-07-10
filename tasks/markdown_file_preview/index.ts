@@ -5,27 +5,37 @@ type Inputs = {
   readonly file_path: string;
 };
 
-type Outputs = {
-  readonly text: string | null;
-};
-
 export default async function (
   params: Inputs,
-  context: Context<Inputs, Outputs>
-): Promise<Outputs> {
+  context: Context<Inputs, void>
+): Promise<void> {
   const filePath = params.file_path;
-  const markdownContent = await readMarkdownFile(filePath);
-
+  let markdownContent: string;
+  try {
+    markdownContent = await fs.readFile(filePath, "utf-8");
+  } catch (error) {
+    if (error.code === "ENOENT") {
+      context.preview({
+        type: "text",
+        data: `File ${filePath} not found.`,
+      });
+    } else {
+      context.preview({
+        type: "text",
+        data: `Error parsing JSON: ${error.message}`
+      });
+    }
+    throw error;
+  }
   if (markdownContent !== null) {
     context.preview({
       type: "markdown",
       data: markdownContent,
     });
   }
-  return { text: markdownContent };
 }
 
-async function readMarkdownFile(filePath: string): Promise<string | null> {
+async function readMarkdownFile(filePath: string, context: Context<Inputs, void>): Promise<string | null> {
   try {
     const markdownText = await fs.readFile(filePath, "utf-8");
     return markdownText;
@@ -34,8 +44,11 @@ async function readMarkdownFile(filePath: string): Promise<string | null> {
       console.error(`File ${filePath} not found.`);
       return null;
     } else {
-      console.error(`An error occurred while reading the file: ${error}`);
-      throw error;
+        context.preview({
+            type: "text",
+            data: `Error parsing JSON: ${error.message}`
+        });
     }
+    throw error;
   }
 }
