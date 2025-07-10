@@ -15,7 +15,6 @@ export default async function (
 ): Promise<Partial<Outputs> | undefined | void> {
 
     const { jsonPath } = params;
-
     try {
         const jsonData = fs.readFileSync(jsonPath, 'utf-8');
         const jsonObject = JSON.parse(jsonData);
@@ -25,6 +24,10 @@ export default async function (
         })
         return { jsonObject: jsonObject }
     } catch (error) {
-        console.error("Error reading or parsing JSON file:", error);
+        context.preview({
+            type: "text",
+            data: `Error parsing JSON: ${error.message}`
+        });
+        throw error;
     }
 };

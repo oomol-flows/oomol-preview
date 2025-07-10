@@ -8,7 +8,7 @@ nodes:
           ui:widget: file
         value: /oomol-driver/oomol-storage/test.json
   - node_id: json_file_preview#1
-    title: "Json File Preview #1"
+    title: "JSON File Preview #1"
     inputs_from:
       - handle: jsonPath
         from_node:
