@@ -23,6 +23,8 @@ nodes:
         value: 0
       - handle: retry_times
         value: 1
+      - handle: reset_filename
+        value: true
   - task: oomol-file::file_to_binary
     title: "File to binary #1"
     node_id: file_to_binary#1

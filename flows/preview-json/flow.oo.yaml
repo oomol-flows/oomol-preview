@@ -15,10 +15,3 @@ nodes:
           - node_id: +value#2
             output_handle: file
     task: self::json_file_preview
-  - node_id: json_object_preview#1
-    task: self::json_object_preview
-    inputs_from:
-      - handle: jsonObject
-        from_node:
-          - node_id: json_file_preview#1
-            output_handle: jsonObject
