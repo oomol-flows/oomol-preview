@@ -5,14 +5,10 @@ type Inputs = {
   readonly file_path: string;
 };
 
-type Outputs = {
-  readonly text: string | null;
-};
-
 export default async function (
   params: Inputs,
-  context: Context<Inputs, Outputs>
-): Promise<Outputs> {
+  context: Context<Inputs, void>
+): Promise<void> {
   const filePath = params.file_path;
   const markdownContent = await readMarkdownFile(filePath);
 
@@ -22,7 +18,6 @@ export default async function (
       data: markdownContent,
     });
   }
-  return { text: markdownContent };
 }
 
 async function readMarkdownFile(filePath: string): Promise<string | null> {

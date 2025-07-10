@@ -12,10 +12,7 @@ inputs_def:
               - markdown
               - mdown
 outputs_def:
-  - handle: text
-    description: Output
-    json_schema:
-      type: string
+  []
 ui:
   default_width: 450
 executor:

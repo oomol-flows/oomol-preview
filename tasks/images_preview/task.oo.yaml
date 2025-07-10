@@ -40,13 +40,7 @@ inputs_def:
                 - tif
                 - tiff
 outputs_def:
-  - handle: images
-    description: Output
-    json_schema:
-      type: array
-      items:
-        type: string
-        ui:widget: file
+  []
 ui:
   default_width: 450
 executor:
