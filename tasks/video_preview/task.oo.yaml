@@ -4,6 +4,26 @@ inputs_def:
     json_schema:
       type: string
       ui:widget: file
+      ui:options:
+        filters:
+          - name: MP4
+            extensions:
+              - mp4
+              - m4v
+          - name: WebM
+            extensions:
+              - webm
+          - name: HLS
+            extensions:
+              - .m3u8
+          - name: MOV
+            extensions:
+              - mov
+              - qt
+              - mqv
+          - name: Ogg
+            extensions:
+              - ogv
 outputs_def:
   []
 ui:
