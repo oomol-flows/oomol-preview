@@ -1,4 +1,4 @@
-version: 0.1.9
+version: 0.2.0
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
@@ -7,8 +7,8 @@ scripts:
     pnpm install --frozen-lockfile
 icon: ./icon.png
 dependencies:
-  oomol-file: 0.1.0
-  oomol-transform: 0.0.7
+  oomol-file: 0.1.1
+  oomol-transform: 0.0.8
 name: oomol-preview
 displayName: "%preview%"
 description: "%oomol-preview-oomol%"

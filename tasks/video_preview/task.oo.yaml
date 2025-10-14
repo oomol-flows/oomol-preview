@@ -33,5 +33,5 @@ executor:
   options:
     entry: index.ts
     spawn: false
-title: Video preview
+title: 视频 preview
 icon: ":carbon:video-player:"
