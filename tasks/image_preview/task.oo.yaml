@@ -46,4 +46,5 @@ outputs_def:
   []
 title: Image preview
 icon: ":carbon:image-search:"
-description: Display and preview image files in various formats including PNG, JPEG, WebP, GIF, AVIF, BMP, ICO, and TIFF
+description: Display and preview image files in various formats including PNG,
+  JPEG, WebP, GIF, AVIF, BMP, ICO, and TIFF
