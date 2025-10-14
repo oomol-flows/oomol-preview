@@ -1,6 +1,6 @@
 inputs_def:
   - handle: binary
-    description: Binary data of the image to preview
+    description: "%binary-data-of-the-image-to-preview%"
     json_schema:
       contentMediaType: oomol/bin
 outputs_def:
@@ -12,6 +12,6 @@ executor:
   options:
     entry: index.ts
     spawn: false
-title: Binary Image preview
+title: "%binary-image-preview2%"
 icon: ":carbon:image:"
-description: Display and preview image from binary data stream
+description: "%display-and-preview-image-from-binary-data-stream%"

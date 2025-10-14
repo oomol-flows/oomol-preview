@@ -2,7 +2,7 @@ ui:
   default_width: 450
 inputs_def:
   - handle: jsonPath
-    description: Path to the JSON file to preview
+    description: "%path-to-the-json-file-to-preview%"
     json_schema:
       type: string
       ui:widget: file
@@ -22,6 +22,6 @@ executor:
   options:
     entry: main.ts
     spawn: false
-title: JSON file preview
+title: "%json-file-preview2%"
 icon: ":carbon:json:"
-description: Display and preview JSON file content with syntax highlighting
+description: "%display-and-preview-json-file-content-with-syntax-highlighting%"

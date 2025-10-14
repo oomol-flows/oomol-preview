@@ -1,6 +1,6 @@
 inputs_def:
   - handle: text
-    description: Markdown text content to preview
+    description: "%markdown-text-content-to-preview%"
     json_schema:
       type: string
       ui:widget: text
@@ -13,5 +13,5 @@ executor:
   options:
     entry: index.ts
     spawn: false
-title: Markdown preview
+title: "%markdown-preview2%"
 icon: ":carbon:document:"

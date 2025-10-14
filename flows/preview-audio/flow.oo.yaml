@@ -1,6 +1,6 @@
 nodes:
   - task: self::audio_preview
-    title: "Audio preview #1"
+    title: "%audio-preview-12%"
     node_id: audio-preview#1
     inputs_from:
       - handle: audio_path
@@ -8,7 +8,7 @@ nodes:
           - node_id: url_to_file#1
             output_handle: file_path
   - task: oomol-file::url_to_file
-    title: "URL to file  #1"
+    title: "%url-to-file-14%"
     node_id: url_to_file#1
     inputs_from:
       - handle: url

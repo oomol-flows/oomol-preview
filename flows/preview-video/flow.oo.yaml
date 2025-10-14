@@ -1,6 +1,6 @@
 nodes:
   - task: self::video_preview
-    title: "Video preview #1"
+    title: "%video-preview-12%"
     node_id: video-preview#1
     inputs_from:
       - handle: video_path
@@ -8,7 +8,7 @@ nodes:
           - node_id: url_to_file#1
             output_handle: file_path
   - task: oomol-file::url_to_file
-    title: "URL to file  #1"
+    title: "%url-to-file-16%"
     node_id: url_to_file#1
     inputs_from:
       - handle: url

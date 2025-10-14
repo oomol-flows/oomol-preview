@@ -8,10 +8,10 @@ nodes:
           # Title
           hello world!
           > foobar
-    title: "Value #1"
+    title: "%value-12%"
     node_id: +value#1
   - task: self::markdown_text_preview
-    title: "Markdown preview #1"
+    title: "%markdown-preview-12%"
     node_id: markdown_text_preview#1
     inputs_from:
       - handle: text
@@ -19,7 +19,7 @@ nodes:
           - node_id: +value#1
             output_handle: markdown
   - task: oomol-file::binary_save_as_file
-    title: "Binary save as file #1"
+    title: "%binary-save-as-file-12%"
     node_id: binary_save_as_file#1
     inputs_from:
       - handle: binary
@@ -31,7 +31,7 @@ nodes:
       - handle: file_path
         value:
   - task: oomol-transform::encode-string
-    title: "Encode string #1"
+    title: "%encode-string-12%"
     node_id: encode-string#1
     inputs_from:
       - handle: string
@@ -41,7 +41,7 @@ nodes:
       - handle: encoding
         value: utf_8
   - task: self::markdown_file_preview
-    title: "Markdown preview (with file) #1"
+    title: "%markdown-preview-with-file-12%"
     node_id: markdown_file_preview#3
     inputs_from:
       - handle: file_path

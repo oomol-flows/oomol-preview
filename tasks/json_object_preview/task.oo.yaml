@@ -2,7 +2,7 @@ ui:
   default_width: 450
 inputs_def:
   - handle: jsonObject
-    description: JSON object data to preview
+    description: "%json-object-data-to-preview%"
     json_schema:
       {}
 outputs_def:
@@ -12,5 +12,5 @@ executor:
   options:
     entry: main.ts
     spawn: false
-title: JSON object preview
+title: "%json-object-preview2%"
 icon: ":carbon:json:"

@@ -1,6 +1,6 @@
 nodes:
   - task: self::image_preview
-    title: "Image preview #1"
+    title: "%image-preview-12%"
     node_id: image-preview#2
     inputs_from:
       - handle: image_path
@@ -8,7 +8,7 @@ nodes:
           - node_id: url_to_file#1
             output_handle: file_path
   - task: oomol-file::url_to_file
-    title: "URL to file  #1"
+    title: "%url-to-file-15%"
     node_id: url_to_file#1
     inputs_from:
       - handle: url
@@ -26,7 +26,7 @@ nodes:
       - handle: reset_filename
         value: true
   - task: oomol-file::file_to_binary
-    title: "File to binary #1"
+    title: "%file-to-binary-12%"
     node_id: file_to_binary#1
     inputs_from:
       - handle: file_path
@@ -34,7 +34,7 @@ nodes:
           - node_id: url_to_file#1
             output_handle: file_path
   - task: self::binary_image_preview
-    title: "Binary Image preview #1"
+    title: "%binary-image-preview-12%"
     node_id: binary_image_preview#1
     inputs_from:
       - handle: binary
@@ -46,7 +46,7 @@ nodes:
         default_width: 450
       inputs_def:
         - handle: file
-          description: Single file path input
+          description: "%single-file-path-input%"
           json_schema:
             type: string
             ui:widget: file
@@ -63,7 +63,7 @@ nodes:
         options:
           entry: scriptlets/+typescript#1.ts
       description: Convert a single file path to an array of file paths
-    title: File to list
+    title: "%file-to-list2%"
     icon: ":skill-icons:typescript:"
     node_id: +typescript#1
     inputs_from:

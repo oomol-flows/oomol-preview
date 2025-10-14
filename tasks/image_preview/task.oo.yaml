@@ -5,7 +5,7 @@ executor:
     spawn: false
 inputs_def:
   - handle: image_path
-    description: Path to the image file to preview
+    description: "%path-to-the-image-file-to-preview%"
     json_schema:
       type: string
       ui:widget: file
@@ -44,7 +44,6 @@ inputs_def:
               - tiff
 outputs_def:
   []
-title: Image preview
+title: "%image-preview2%"
 icon: ":carbon:image-search:"
-description: Display and preview image files in various formats including PNG,
-  JPEG, WebP, GIF, AVIF, BMP, ICO, and TIFF
+description: "%display-and-preview-image-files-in-various-formats-including-png%"
