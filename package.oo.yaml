@@ -1,4 +1,4 @@
-version: 0.1.7
+version: 0.1.8
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
@@ -7,10 +7,10 @@ scripts:
     pnpm install --frozen-lockfile
 icon: ./icon.png
 dependencies:
-  oomol-file: 0.0.20
+  oomol-file: 0.1.0
   oomol-transform: 0.0.7
 name: oomol-preview
-displayName: Preview
-description: A set of components to display files and data in various formats
+displayName: "%preview%"
+description: "%oomol-preview-oomol%"
 repository: https://github.com/oomol-flows/oomol-preview
 releaseNotes: fix ci bug

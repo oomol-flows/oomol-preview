@@ -1,6 +1,6 @@
 inputs_def:
   - handle: images
-    description: Input
+    description: Array of image file paths to preview
     json_schema:
       type: array
       items:
@@ -50,3 +50,4 @@ executor:
     spawn: false
 title: Images preview
 icon: ":carbon:image-copy:"
+description: Display and preview multiple image files in a gallery view
