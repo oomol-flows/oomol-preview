@@ -46,13 +46,13 @@ nodes:
         default_width: 450
       inputs_def:
         - handle: file
-          description: Input
+          description: Single file path input
           json_schema:
             type: string
             ui:widget: file
       outputs_def:
         - handle: files
-          description: Output
+          description: Array of file paths output
           json_schema:
             type: array
             items:
@@ -62,6 +62,7 @@ nodes:
         name: nodejs
         options:
           entry: scriptlets/+typescript#1.ts
+      description: Convert a single file path to an array of file paths
     title: File to list
     icon: ":skill-icons:typescript:"
     node_id: +typescript#1

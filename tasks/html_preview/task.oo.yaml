@@ -1,6 +1,6 @@
 inputs_def:
   - handle: html
-    description: Input
+    description: HTML content string to preview
     json_schema:
       type: string
       ui:widget: text

@@ -2,7 +2,7 @@ ui:
   default_width: 450
 inputs_def:
   - handle: jsonObject
-    description: Input
+    description: JSON object data to preview
     json_schema:
       {}
 outputs_def:

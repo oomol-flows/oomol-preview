@@ -2,7 +2,7 @@ ui:
   default_width: 450
 inputs_def:
   - handle: jsonString
-    description: Input
+    description: JSON string content to preview
     json_schema:
       type: string
 outputs_def:
@@ -14,3 +14,4 @@ executor:
     spawn: false
 icon: ":carbon:json:"
 title: JSON string preview
+description: Display and preview JSON string content with syntax highlighting

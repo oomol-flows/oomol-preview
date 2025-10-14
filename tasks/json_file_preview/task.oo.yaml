@@ -2,7 +2,7 @@ ui:
   default_width: 450
 inputs_def:
   - handle: jsonPath
-    description: Input
+    description: Path to the JSON file to preview
     json_schema:
       type: string
       ui:widget: file
@@ -24,3 +24,4 @@ executor:
     spawn: false
 title: JSON file preview
 icon: ":carbon:json:"
+description: Display and preview JSON file content with syntax highlighting
