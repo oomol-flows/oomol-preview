@@ -1,6 +1,6 @@
 inputs_def:
   - handle: images
-    description: Array of image file paths to preview
+    description: "%array-of-image-file-paths-to-preview%"
     json_schema:
       type: array
       items:
@@ -48,6 +48,6 @@ executor:
   options:
     entry: index.ts
     spawn: false
-title: Images preview
+title: "%images-preview2%"
 icon: ":carbon:image-copy:"
-description: Display and preview multiple image files in a gallery view
+description: "%display-and-preview-multiple-image-files-in-a-gallery-view%"

@@ -1,6 +1,6 @@
 inputs_def:
   - handle: file_path
-    description: Path to the Markdown file to preview
+    description: "%path-to-the-markdown-file-to-preview%"
     json_schema:
       type: string
       ui:widget: file
@@ -20,5 +20,5 @@ executor:
   options:
     entry: index.ts
     spawn: false
-title: Markdown file preview
+title: "%markdown-file-preview2%"
 icon: ":carbon:document-attachment:"

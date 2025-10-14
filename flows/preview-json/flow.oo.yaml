@@ -1,6 +1,6 @@
 nodes:
   - node_id: +value#2
-    title: "Value #2"
+    title: "%value-22%"
     values:
       - handle: file
         json_schema:
@@ -8,7 +8,7 @@ nodes:
           ui:widget: file
         value: /oomol-driver/oomol-storage/test.json
   - node_id: json_file_preview#1
-    title: "JSON File Preview #1"
+    title: "%json-file-preview-12%"
     inputs_from:
       - handle: jsonPath
         from_node:

@@ -1,6 +1,6 @@
 nodes:
   - task: self::html_preview
-    title: "HTML preview #1"
+    title: "%html-preview-12%"
     node_id: html-preview#1
     inputs_from:
       - handle: html

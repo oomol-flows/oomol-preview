@@ -1,6 +1,6 @@
 inputs_def:
   - handle: audio_path
-    description: Path to the audio file to preview
+    description: "%path-to-the-audio-file-to-preview%"
     json_schema:
       type: string
       ui:widget: file
@@ -52,7 +52,6 @@ executor:
   options:
     entry: index.ts
     spawn: false
-title: Audio preview
+title: "%audio-preview2%"
 icon: ":carbon:document-audio:"
-description: Display and preview audio files in various formats including MP3,
-  MP4, WAV, WebM, FLAC, Opus, PCM, Vorbis, and AAC
+description: "%display-and-preview-audio-files-in-various-formats-including-mp3%"

@@ -1,6 +1,6 @@
 inputs_def:
   - handle: html
-    description: HTML content string to preview
+    description: "%html-content-string-to-preview%"
     json_schema:
       type: string
       ui:widget: text
@@ -13,5 +13,5 @@ executor:
   options:
     entry: index.ts
     spawn: false
-title: HTML preview
+title: "%html-preview2%"
 icon: ":carbon:earth-filled:"
